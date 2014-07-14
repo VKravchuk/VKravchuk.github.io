@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyBlog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="../../css/main.css" rel="stylesheet">
+		<link href="../../css/bootstrap.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+		<script> 
+			$(function(){
+			  $("#includedHeader").load("/html/header.html"); 
+			});
+			$(function(){
+			  $("#includedAside").load("/html/aside.html"); 
+			});
+		</script> 
+	</head>
+	<body>
+		<div class="wrapper container mrg-top">
+			<div id="includedHeader"></div>
+			<nav>
+				<div class="container mrg-top">
+					<div class="row">
+						<div class="navbar navbar-default col-md-12 col-xs-12">
+							<div class="container">
+								<div class="navbar-header">
+								  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								  </button>
+								</div>
+ 								<div class="collapse navbar-collapse">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="/">HOME</a></li>
+										<li class="active"><a href="/html/categories/categories-index.html">CATEGORIES</a></li>
+										<li><a href="/html/about.html">ABOUT US</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container-fluid back-to-top navbar-fixed-bottom">
+				<button class="btn btn-default" id="btn-back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+			</div>
+			<div class="row">
+				<section class="col-md-9 col-lg-9 col-sm-9">
+					<div class="row" id="post3">
+						<div class="bg-titles titles-head col-md-12 ">
+							<h3 >Introduction</h3>
+							<h6 class="text-muted">Added 9/07/2014 at 09.10 by <a href="#">VKravchuk</a></h6>
+							<h6 class="text-muted">Categories:<a href="html/categories/tamplates.html">Tamplates</a></h6>
+						</div>
+						<p class="col-md-12">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+							vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida
+							mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a,
+							magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tris-
+							tique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo.
+							Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla
+							ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien
+							est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultri-
+							ces bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar
+							at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget
+							risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis
+							eget orci sit amet orci dignissim rutrum.<br/><br/>
+							Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi
+							auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies
+							et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+							magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+							Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis
+							natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque
+							cursus luctus mauris.<br/><br/>
+							Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat
+							at, tincidunt tristique, libero. Vivamus viverra fermentum felis. Donec non-
+							ummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermen-
+							tum massa ac quam. Sed diam turpis, molestie vitae, placerat a, molestie
+							nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec,
+							suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend conse-
+							quat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel
+							magna. Integer non enim. Praesent euismod nunc eu purus. Donec biben-
+							dum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam
+							vulputate metus eu enim. Vestibulum pellentesque felis eu massa.
+							Some mathematics in the text: cos = -1 and alfa.<br/><br/>
+						</p>
+					</div>
+				</section>
+				<aside class="col-md-3 col-lg-3 col-sm-3">
+					<div id="includedAside"></div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-fluid footer mrg-top">
+				<div class="container">
+					<div class="col-md-3 col-md-offset-5 mrg-top">
+						<img src="../../images/footer-logo.png" class="footer-logo">
+						<p class="copy">Copyrigth &copy; Some copyright olololo azazaza</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../../js/work.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+</html>

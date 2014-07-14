@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyBlog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="../../css/main.css" rel="stylesheet">
+		<link href="../../css/bootstrap.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+		<script> 
+			$(function(){
+			  $("#includedHeader").load("/html/header.html"); 
+			});
+			$(function(){
+			  $("#includedAside").load("/html/aside.html"); 
+			});
+		</script> 
+	</head>
+	<body>
+		<div class="wrapper container mrg-top">
+			<div id="includedHeader"></div>
+			<nav>
+				<div class="container mrg-top">
+					<div class="row">
+						<div class="navbar navbar-default col-md-12 col-xs-12">
+							<div class="container">
+								<div class="navbar-header">
+								  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								  </button>
+								</div>
+ 								<div class="collapse navbar-collapse">
+									<ul class="nav navbar-nav">
+										<li><a href="/">HOME</a></li>
+										<li class="active"><a href="/html/categories/categories-index.html">CATEGORIES</a></li>
+										<li><a href="/html/about.html">ABOUT US</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container-fluid back-to-top navbar-fixed-bottom">
+				<button class="btn btn-default" id="btn-back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+			</div>
+			<div class="row">
+				<section class="col-md-9 col-lg-9 col-sm-9">
+					<div class="row">
+						<div class="bg-titles titles-head col-md-12 ">
+							<h3 >Categories:</h3>
+						</div>
+						<ul>
+							<li><a href="/html/categories/tamplates.html">Tamplates</a></li>
+							<li><a href="/html/categories/from-wiki.html">From Wiki</a></li>
+						</ul>
+					</div>
+				</section>
+				<aside class="col-md-3 col-lg-3 col-sm-3">
+					<div id="includedAside"></div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-fluid footer mrg-top">
+				<div class="container">
+					<div class="col-md-3 col-md-offset-5 mrg-top">
+						<img src="../../images/footer-logo.png" class="footer-logo">
+						<p class="copy">Copyrigth &copy; Some copyright olololo azazaza</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../../js/work.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+</html>

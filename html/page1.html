@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyBlog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="../css/main.css" rel="stylesheet">
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+		<script> 
+			$(function(){
+			  $("#includedHeader").load("/html/header.html"); 
+			});
+			$(function(){
+			  $("#includedAside").load("/html/aside.html"); 
+			});
+		</script> 
+	</head>
+	<body>
+		<div class="wrapper container mrg-top">
+			<div id="includedHeader"></div>
+			<nav>
+				<div class="container mrg-top">
+					<div class="row">
+						<div class="navbar navbar-default col-md-12 col-xs-12">
+							<div class="container">
+								<div class="navbar-header">
+								  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								  </button>
+								</div>
+ 								<div class="collapse navbar-collapse">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="/">HOME</a></li>
+										<li><a href="/html/categories/categories-index.html">CATEGORIES</a></li>
+										<li><a href="/html/about.html">ABOUT US</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="heading">
+				<h1>Page 2</h1>
+			</div>
+			<div class="container-fluid back-to-top navbar-fixed-bottom">
+				<button class="btn btn-default" id="btn-back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+			</div>
+			<div class="row">
+				<section class="col-md-9 col-lg-9 col-sm-9">
+					<div class="row" id="post3">
+						<div class="bg-titles titles-head col-md-12 ">
+							<h3 >Page layout</h3>
+							<h6 class="text-muted">Added 9/07/2014 at 09.10 by <a href="#">VKravchuk</a></h6>
+							<h6 class="text-muted">Categories:<a href="/html/categories/tamplates.html">Tamplates;</a> <a href="/html/categories/from-wiki.html">From Wiki</a></h6>
+						</div>
+						<p class="col-md-12">
+							Page layout is the part of graphic design that deals in the arrangement of visual elements on a page. It generally involves organisational principles of composition to achieve specific communication objectives.<br/>
+
+							The high-level page layout involves deciding on the overall arrangement of text and images, and possibly on the size or shape of the medium. It requires intelligence, sentience, and creativity, and is informed by culture, psychology, and what the document authors and editors wish to communicate and emphasize. Low-level pagination and typesetting are more mechanical processes. Given certain parameters - boundaries of text areas, the typeface, font size, and justification preference can be done in a straightforward way. Until desktop publishing became dominant, these processes were still done by people, but in modern publishing they are almost always automated. The result might be published as-is (as for a phone book interior) or might be tweaked by a graphic designer (as for a highly polished, expensive publication).
+						</p>
+						<a href="/html/post/page-layout.html"><button class="btn btn-info col-md-3">Read full version...</button></a>
+					</div>
+					<div class="row" id="post4">
+						<div class="bg-titles titles-head col-md-12 ">
+							<h3 >Battle of Durbe</h3>
+							<h6 class="text-muted">Added 9/07/2014 at 04.53 by <a href="#">VKravchuk</a></h6>
+							<h6 class="text-muted">Categories:<a href="/html/categories/from-wiki.html">From Wiki</a></h6>
+						</div>
+						<p class="col-md-12">
+							The Battle of Durbe (Latvian: Durbes kauja, Lithuanian: Durbės mūšis, German: Schlacht an der Durbe) was a medieval battle fought near Durbe, 23 km (14 mi) east of Liepāja, in present-day Latvia during the Livonian Crusade. On 13 July 1260, the Samogitians soundly defeated the joint forces of the Teutonic Knights from Prussia and Livonian Order from Livonia. 150 knights were killed including Livonian Master Burchard von Hornhausen and Prussian Land Marshal Henrik Botel.[1] It was by far the largest defeat of the knights in the 13th century: in the second-largest, the Battle of Aizkraukle, 71 knights were killed.[2] The battle inspired the Great Prussian Uprising (ended in 1274), rebellion of the Semigallians (surrendered in 1290), the Couronians (surrendered in 1267), and the Oeselians (surrendered in 1261). The battle undid two decades of Livonian conquests and it took some thirty years for the Livonian Order to restore its control.
+						</p>
+						<a href="/html/post/battle-of-durbe.html"><button class="btn btn-info col-md-3">Read full version...</button></a>
+					</div>
+				</section>
+				<aside class="col-md-3 col-lg-3 col-sm-3">					
+					<div id="includedAside"></div>
+				</aside>
+			</div>
+			<ul class="pagination">
+			  <li><a href="../index.html">&laquo;</a></li>
+			  <li ><a href="../index.html">1</a></li>
+			  <li class="active"><a href="#">2</a></li>
+			  <li class="disabled"><a href="#">3</a></li>
+			  <li class="disabled"><a href="#">4</a></li>
+			  <li  class="disabled"><a href="html/page1.html">&raquo;</a></li>
+			</ul>
+		</div>
+		<footer>
+			<div class="container-fluid footer mrg-top">
+				<div class="container">
+					<div class="col-md-3 col-md-offset-5 mrg-top">
+						<img src="../images/footer-logo.png" class="footer-logo">
+						<p class="copy">Copyrigth &copy; Some copyright olololo azazaza</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/work.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</html>
