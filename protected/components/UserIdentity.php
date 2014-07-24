@@ -17,7 +17,7 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
-		$users=array(
+/*		$users=array(
 			// username => password
 			'demo'=>'demo',
 			'admin'=>'admin',
@@ -28,6 +28,18 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else
 			$this->errorCode=self::ERROR_NONE;
-		return !$this->errorCode;
-	}
+		return !$this->errorCode;*/
+            $user = TblUser::model()->findByAttributes(array('username'=>$this->username));
+            if ($user === null)
+                $this->errorCode = self::ERROR_USERNAME_INVALID;
+            else if ($user->password !== $this->password)
+                $this->errorCode = self::ERROR_PASSWORD_INVALID;
+            else {
+                /*$this->id = $user->id;
+                $this->setState('title', $user->title);*/
+                Yii::app()->user->setId($user->id);
+                $this->errorCode = self::ERROR_NONE;
+            }
+        return !$this->errorCode;
+    }
 }

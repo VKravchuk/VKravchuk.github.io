@@ -13,29 +13,39 @@
 		<script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
 		<script> 
 			$(function(){
-			  $("#includedHeader").load("/html/header.html"); 
-			});
-			$(function(){
 			  $("#includedAside").load("/html/aside.html"); 
 			});
 		</script> 
 	</head>
 	<body>
 		<div class="wrapper container mrg-top">
-			<div id="includedHeader"></div>
+			<header class="row mrg-top">
+				<a href="/" class="col-xs-offset-1 col-sm-offset-0 header-logo"><img src="/images/logo.png" alt="Whitesquare logo"></a>
+				<div id="small-device-menu" class="col-xs-12"></div>
+				<form name="search" action="#" method="get" class="form-inline form-search pull-right col-md-3 col-sm-5 col-xs-12">
+					<div class="input-group">
+						<label class="sr-only" for="searchInput">Search</label>
+						<input class="form-control" id="searchInput" type="text" name="search" placeholder="Search">
+						<div class="input-group-btn">
+							<button type="submit" class="btn btn-info">GO</button>
+						</div>
+					</div>
+				</form>
+			</header>
 			<nav>
 				<div class="container mrg-top">
 					<div class="row">
-						<div class="navbar navbar-default col-md-12 col-xs-12">
+						<div class="navbar topmenu navbar-default col-md-12 col-xs-12">
 							<div class="container">
 								<div class="navbar-header">
-								  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								    <span class="icon-bar"></span>
-								    <span class="icon-bar"></span>
-								    <span class="icon-bar"></span>
-								  </button>
+									<a href="/" class="navbar-logo"><img src="/images/logo.png" alt="Whitesquare logo"></a>
+									<button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
 								</div>
- 								<div class="collapse navbar-collapse">
+								<div class="collapse navbar-collapse">
 									<ul class="nav navbar-nav">
 										<li><a href="/">HOME</a></li>
 										<li><a href="/html/categories/categories-index.html">CATEGORIES</a></li>
@@ -49,7 +59,7 @@
 				</div>
 			</nav>
 			<div class="container-fluid back-to-top navbar-fixed-bottom">
-				<button class="btn btn-default" id="btn-back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+				<button class="btn btn-default " id="btn-back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
 			</div>
 			<div class="row">
 				<section class="col-md-9 col-lg-9 col-sm-9">
@@ -60,6 +70,8 @@
 							<h6 class="text-muted">Categories:<a href="html/categories/tamplates.html">Tamplates</a></h6>
 						</div>
 						<p class="col-md-12">
+							<img class="img-responsive img-text" src="http://sdfacademy.com/wp-content/uploads/2012/11/SDFA-GU10-AA-C-1st-place.jpg">
+							
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
 							vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida
 							mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a,
@@ -80,6 +92,7 @@
 							natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 							Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque
 							cursus luctus mauris.<br/><br/>
+							<img class="img-responsive img-text" src="http://www.absolutek-9services.com/sitebuilder/images/dfgsdfg2-448x332.jpg">
 							Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat
 							at, tincidunt tristique, libero. Vivamus viverra fermentum felis. Donec non-
 							ummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermen-
@@ -91,8 +104,135 @@
 							dum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam
 							vulputate metus eu enim. Vestibulum pellentesque felis eu massa.
 							Some mathematics in the text: cos = -1 and alfa.<br/><br/>
+							Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla
+							a faucibus semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl.
+							Vestibulum diam. Aliquam pellentesque, augue quis sagittis posuere, turpis
+							lacus congue quam, in hendrerit risus eros eget felis. Maecenas eget erat in
+							sapien mattis porttitor. Vestibulum porttitor. Nulla facilisi. Sed a turpis eu
+							lacus commodo facilisis. Morbi fringilla, wisi in dignissim interdum, justo
+							lectus sagittis dui, et vehicula libero dui cursus dui. Mauris tempor ligula
+							sed lacus. Duis cursus enim ut augue. Cras ac magna. Cras nulla. Nulla
+							egestas. Curabitur a leo. Quisque egestas wisi eget nunc. Nam feugiat lacus
+							vel est. Curabitur consectetuer.<br/><br/>
+							<b>Paragraphs</b><br/><br/>
+							Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet,
+							laoreet vitae, arcu. Aenean faucibus pede eu ante. Praesent enim elit,
+							rutrum at, molestie non, nonummy vel, nisl. Ut lectus eros, malesuada
+							sit amet, fermentum eu, sodales cursus, magna. Donec eu purus. Quisque
+							vehicula, urna sed ultricies auctor, pede lorem egestas dui, et convallis elit
+							erat sed nulla. Donec luctus. Curabitur et nunc. Aliquam dolor odio, com-
+							modo pretium, ultricies non, pharetra in, velit. Integer arcu est, nonummy
+							in, fermentum faucibus, egestas vel, odio.<br/><br/>
+							<i>paragraph description</i>
+							<img class="img-responsive img-text" src="http://media.soundonsound.com/sos/oct06/images/korg01header_l.jpg">
+							Sed commodo posuere pede. Mauris ut est. Ut
+							quis purus. Sed ac odio. Sed vehicula hendrerit sem. Duis non odio. Morbi
+							ut dui. Sed accumsan risus eget odio. In hac habitasse platea dictumst.
+							Pellentesque non elit. Fusce sed justo eu urna porta tincidunt. Mauris felis
+							odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis dolor. Donec
+							pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis congue
+							purus metus ultricies tellus. Proin et quam. Class aptent taciti sociosqu ad
+							litora torquent per conubia nostra, per inceptos hymenaeos. Praesent sapien
+							turpis, fermentum vel, eleifend faucibus, vehicula eu, lacus.<br/><br/>
+							<i>different paragraph description</i>
+							Pellentesque habitant morbi tristique
+							senectus et netus et malesuada fames ac turpis egestas. Donec odio elit, dic-
+							tum in, hendrerit sit amet, egestas sed, leo. Praesent feugiat sapien aliquet
+							odio. Integer vitae justo. Aliquam vestibulum fringilla lorem. Sed neque
+							lectus, consectetuer at, consectetuer sed, eleifend ac, lectus. Nulla facilisi.
+							Pellentesque eget lectus. Proin eu metus. Sed porttitor. In hac habitasse
+							platea dictumst. Suspendisse eu lectus. Ut mi mi, lacinia sit amet, placerat
+							et, mollis vitae, dui. Sed ante tellus, tristique ut, iaculis eu, malesuada ac,
+							dui. Mauris nibh leo, facilisis non, adipiscing quis, ultrices a, dui.<br/><br/>
+							Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus
+							tincidunt ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+							In hac habitasse platea dictumst. Integer tempus convallis augue. Etiam
+							facilisis. Nunc elementum fermentum wisi. Aenean placerat. Ut imperdiet,
+							enim sed gravida sollicitudin, felis odio placerat quam, ac pulvinar elit pu-
+							rus eget enim. Nunc vitae tortor. Proin tempus nibh sit amet nisl. Vivamus
+							quis tortor vitae risus porta vehicula.<br/>
+							<img class="img-responsive img-text" src="http://img.planespotters.net/photo/286000/original/TC-MNJ-MNG-Airlines-Airbus-A300B4_PlanespottersNet_286143.jpg"><br/>
+							Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla
+							a faucibus semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl.
+							Vestibulum diam. Aliquam pellentesque, augue quis sagittis posuere, turpis
+							lacus congue quam, in hendrerit risus eros eget felis. Maecenas eget erat in
+							sapien mattis porttitor. Vestibulum porttitor. Nulla facilisi. Sed a turpis eu
+							lacus commodo facilisis. Morbi fringilla, wisi in dignissim interdum, justo
+							lectus sagittis dui, et vehicula libero dui cursus dui. Mauris tempor ligula
+							sed lacus. Duis cursus enim ut augue. Cras ac magna. Cras nulla. Nulla
+							egestas. Curabitur a leo. Quisque egestas wisi eget nunc. Nam feugiat lacus
+							vel est. Curabitur consectetuer.<br/><br/>
 						</p>
+						
 					</div>
+					<div class="row">
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&appId=763991130332138&version=v2.0";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-comments col-md-12" data-href="http://example.com/comments" data-width="1000px" data-numposts="5" data-colorscheme="light"></div>
+					</div>
+					<!--<form class="form-horizontal">
+						<fieldset>
+
+							<legend>Add comment</legend>
+
+							<div class="form-group">
+								<label class="col-md-2 control-label" for="textinput">Your name</label>  
+								<div class="col-md-10">
+									<input id="username" name="username" placeholder="write your name here" class="form-control input-md" required="" type="text">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-2 control-label" for="textinput">Your comment</label>  
+								<div class="col-md-10">
+									<textarea id="commentinput" name="commentinput" placeholder="write text here" class="form-control input-md" required="" type="text" rows="3"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class=" col-md-3 col-md-offset-2 ">
+									<button type="submit" name="submitComment" class="btn btn-info btn-block">Send</button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+					<legend>Comments</legend>
+					<div class="row">
+						<div class="col-md-2">
+							<h4 >User 666:</h4>
+							<small class="text-muted">Added 9/07/2014 at 09.30</small>
+						</div>
+						<p class="col-md-10">In vino veritas!</p>
+					</div>
+					<legend></legend>
+					<div class="row">
+						<div class="col-md-2">
+							<h4 >User 13:</h4>
+							<small class="text-muted">Added 10/07/2014 at 11.33</small>
+						</div>
+						<p class="col-md-10">Aliquam pellentesque, augue quis sagittis posuere, turpis
+							lacus congue quam, in hendrerit risus eros eget felis. Maecenas eget erat in
+							sapien mattis porttitor.</p>
+					</div>
+					<legend></legend>
+					<div class="row">
+						<div class="col-md-2">
+							<h4 >User 999:</h4>
+							<small class="text-muted">Added 10/07/2014 at 21.14</small>
+						</div>
+						<p class="col-md-10">Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula hendrerit sem. Duis non odio. Morbi ut dui. Sed accumsan risus eget odio. In hac habitasse platea dictumst. Pellentesque non elit. Fusce sed justo eu urna porta tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. </p>
+					</div>
+					<legend></legend>
+
+					<a href="#"> + <u>All comments</u></a>
+					<br/><br/> -->
 				</section>
 				<aside class="col-md-3 col-lg-3 col-sm-3">
 					<div id="includedAside"></div>
