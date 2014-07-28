@@ -90,7 +90,16 @@ html, body {
 }
 .fb-comments, .fb-comments *{
     width: 100% !important;
-}/* 
+}
+.google-maps{
+	width: 228;
+	height: 180;
+	border: 0px;
+	overflow: hidden;
+	margin: 0px;
+	margin-top: 10px;
+}
+/* 
 {
 	display: inline-block;
 	padding: 6px 12px;
