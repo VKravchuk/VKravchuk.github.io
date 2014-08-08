@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="blog">
+<html ng-app="blog">
 <head>
     <title>MyBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,8 @@
 </head>
 <body>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-<script>
-    $(function () {
-        $("#includedHeader").load("/html/header.html");
-    });
-    $(function () {
-        $("#includedAside").load("/html/aside.html");
-    });
-</script>
-<div class="wrapper container mrg-top">
-    <div id="includedHeader"></div>
+<div class="wrapper container mrg-top" ng-controller="IncludeController as include">
+    <div ng-include src="include.header"></div>
     <nav>
         <div class="container mrg-top">
             <div class="row" id="default-menu-position">
@@ -124,7 +116,7 @@
             </div>
         </section>
         <aside class="col-md-3 col-lg-3 col-sm-3">
-            <div id="includedAside"></div>
+            <div ng-include src="include.aside"></div>
         </aside>
     </div>
     <ul class="pagination">
@@ -146,6 +138,7 @@
     </div>
 </footer>
 <script type="text/javascript" src="js/work.js"></script>
+<script src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
