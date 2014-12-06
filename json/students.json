@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"name": "John Smith",
+		"point": 84
+	},
+	{
+		"id": 2,
+		"name": "Jane Smith",
+		"point": 56
+	},
+	{
+		"id": 3,
+		"name": "Joe Jonson",
+		"point": 99
+	},
+	{
+		"id": 4,
+		"name": "Steven Moffat",
+		"point": 81
+	}
+]

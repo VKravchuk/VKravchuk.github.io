@@ -1,0 +1,16 @@
+<div>
+	Filter by name: <input type="text" ng-model="search.name"/>
+</div>
+<div>
+	Sort by:
+	<select ng-model="sortBy">
+		<option value="name" selected>Name</option>
+		<option value="point">Point</option>
+	</select>
+</div>
+<ul>
+	<li ng-repeat="student in students | filter: search | orderBy: sortBy">
+		<a href="#/student/{{student.id}}">{{student.name}}</a>
+		<p>{{student.point}}</p>
+	</li>
+</ul>
