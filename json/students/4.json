@@ -1,14 +1,14 @@
 {
-  "name": "John Smith",
+  "name": "Steven Moffat",
   "points": [
     {
       "subject": "OOP",
-      "point": "75"
+      "point": "85"
     },
     {
       "subject": "Web Developming",
-      "point" : "84"
+      "point" : "81"
     }
   ],
-  "group": "KN-44"
+  "group": "KN-43"
 }

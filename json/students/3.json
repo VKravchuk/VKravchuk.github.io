@@ -1,13 +1,13 @@
 {
-  "name": "John Smith",
+  "name": "Joe Jonson",
   "points": [
     {
       "subject": "OOP",
-      "point": "75"
+      "point": "64"
     },
     {
       "subject": "Web Developming",
-      "point" : "84"
+      "point" : "99"
     }
   ],
   "group": "KN-44"

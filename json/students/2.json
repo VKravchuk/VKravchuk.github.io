@@ -1,14 +1,14 @@
 {
-  "name": "John Smith",
+  "name": "Jane Smith",
   "points": [
     {
       "subject": "OOP",
-      "point": "75"
+      "point": "71"
     },
     {
       "subject": "Web Developming",
-      "point" : "84"
+      "point" : "56"
     }
   ],
-  "group": "KN-44"
+  "group": "KN-43"
 }
