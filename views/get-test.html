@@ -1,0 +1,11 @@
+<form name="myForm" data-ng-submit="getResult()">
+	<div ng-repeat="test in tests">
+		Question {{test.id}}: {{test.question}}
+		<p>Variants:</p>
+		<div ng-repeat="variant in test.variants">
+			<input type="radio" name="question{{test.id}}" ng-model="answers[test.id]" value="{{variant}}" id="qst{{test.id}}_var{{$index}}"/>
+			<label for="qst{{test.id}}_var{{$index}}">{{variant}}</label>
+		</div>
+	</div>
+	<input type="submit" id="submit" value="Submit"/>
+</form>
