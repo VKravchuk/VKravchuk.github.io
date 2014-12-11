@@ -16,7 +16,7 @@ studentApp = angular.module('StudentsApp', [
 		})
 		.when('/result', {
 			templateUrl: 'views/result.html',
-			controller: 'GetTestCtrl'
+			controller: 'GetResultCtrl'
 		})
 		.when('/', {
 			templateUrl: 'views/home.html'

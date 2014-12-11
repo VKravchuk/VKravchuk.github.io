@@ -1,27 +1,35 @@
-studentApp.controller('GetTestCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
-	$http.get('json/tests.json').success(function(data){
+studentApp.controller('GetTestCtrl', ['$scope', 'testFactory', 'getData', function($scope, testFactory, getData) {
+	getData.getTestsData().success(function(data){
 		$scope.tests = data;
+		$scope.answers = [];
+		for(var i = 0; i <  $scope.tests.length; $scope.answers[i++] = null){}
 	});
-	$scope.answers = [];
 	$scope.getResult = function(){
-		console.log($scope.answers);
-		$location.url('/result');
+		testFactory.calculateResult($scope.answers, $scope.tests);
 	};
 }]);
 
-studentApp.controller('StudentDetailCtrl', ['$scope', '$routeParams', '$http',
-	function($scope, $routeParams, $http){
-		$http.get('json/students/' + $routeParams.studentId + '.json').success(function(data) {
+studentApp.controller('GetResultCtrl', ['$scope', 'testFactory', function($scope, testFactory) {
+	$scope.result = testFactory.getResult()[0];
+	$scope.testsLength = testFactory.getResult()[1];
+}]);
+
+studentApp.controller('StudentDetailCtrl', ['$scope', 'getData',
+	function($scope, getData){
+
+		getData.getStudentDetail().success(function(data){
 			$scope.student = data;
 		});
 	}
 ]);
 
-studentApp.controller('StudentListCtrl', ['$scope', '$http',
-	function($scope, $http){
-		$http.get('json/students.json').success(function(data){
+studentApp.controller('StudentListCtrl', ['$scope', 'getData',
+	function($scope, getData){
+
+		getData.getStudentList().success(function(data){
 			$scope.students = data;
 		});
+
 		$scope.sortBy = 'name';
 	}
 ]);
