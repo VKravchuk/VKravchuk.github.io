@@ -1,12 +1,17 @@
-<div>
-	Filter by name: <input type="text" ng-model="search.name"/>
+<div class="form-group row">
+	<label for="searchName" class="col-sm-1 control-label">Filter by name:</label>
+	<div class="col-sm-3">
+		<input type="text" ng-model="search.name" id="searchName" class="form-control"/>
+	</div>
 </div>
-<div>
-	Sort by:
-	<select ng-model="sortBy">
-		<option value="name" selected>Name</option>
-		<option value="point">Point</option>
-	</select>
+<div class="form-group row">
+	<label for="sortBy" class="col-sm-1 control-label">Sort by:</label>
+	<div class="col-sm-3">
+		<select ng-model="sortBy" class="form-control" id="sortBy">
+			<option value="name" selected>Name</option>
+			<option value="point">Point</option>
+		</select>
+	</div>
 </div>
 <ul>
 	<li ng-repeat="student in students | filter: search | orderBy: sortBy">
