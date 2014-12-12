@@ -15,7 +15,7 @@
 </div>
 <ul>
 	<li ng-repeat="student in students | filter: search | orderBy: sortBy">
-		<a href="#/student/{{student.id}}">{{student.name}}</a>
+		<a href="/#/student/{{student.id}}">{{student.name}}</a>
 		<p>{{student.point}}</p>
 	</li>
 </ul>

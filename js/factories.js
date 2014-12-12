@@ -1,15 +1,15 @@
-studentApp.factory('getData', ['$http', '$routeParams', function($http, $location, $routeParams){
+studentApp.factory('getData', ['$http', '$location','$routeParams', function($http, $location, $routeParams){
 	return {
 		getStudentList : function () {
-			return $http.get('json/students.json');
+			return $http.get('/json/students.json');
 		},
 
 		getStudentDetail : function () {
-			return $http.get('json/students/' + $routeParams.studentId + '.json');
+			return $http.get('/json/students/' + $routeParams.studentId + '.json');
 		},
 
 		getTestsData : function () {
-			return $http.get('json/tests.json');
+			return $http.get('/json/tests.json');
 		}
 	}
 }]);
