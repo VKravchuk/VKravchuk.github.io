@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic-tac-toe</title>
+	<link href='style.css' rel='stylesheet'>
+</head>
+<body data-ng-app="tttApp">
+	<div ng-controller="GameController as ctrl" class="container">
+		<table ng-show="gameState == 1">
+			<tr ng-repeat="rowVal in nodesVal">
+				<td ng-repeat="nodeVal in rowVal track by $index" value="{{nodeVal}}" ng-click="changeVal($parent.$index, $index)">{{nodeVal}}</td>
+			</tr>
+		</table>
+		<div ng-show="gameState == 2" class="description">{{winer}}</div>
+		<div ng-show="gameState == 0" class="description">It's tik-tak-toe game. You play against computer. Your turn is first.</div>
+		<button ng-click="start()" ng-show="gameState != 1">Start Game</button>
+	</div>
+	<script src='/js/libs/jquery-2.1.1.min.js'></script>
+	<script src='/js/libs/angular.min.js'></script>
+	<script src='app.js'></script>
+	<script src='controllers.js'></script>
+	<script src='factories.js'></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+table td{
+	border: 1px solid #444;
+	padding: 0;
+	cursor: crosshair;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	font-family: Helvetica;
+	line-height: 80px;
+	font-weight: 600;
+	font-size: 40px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+table{
+	display: inline-block;
+	border-spacing: 0px;
+	margin-top: 80px;
+}
+.container{
+	text-align: center;
+}
+button{
+	height: 40px;
+	border-radius: 5px;
+	background-color: #22A49A;
+	border: none;
+	margin-top: 160px;
+}
+.description{
+	margin-top: 100px;
+	font-size: 22px;
+}
+.description + button{
+	margin-top: 100px;
+}
