@@ -18,6 +18,7 @@ tttApp.factory('gameFactory', function(){
 	var nodesWeight = [ [ 3, 1, 3],
 						[ 1, 5, 1],
 						[ 3, 1, 3]];
+	console.log(nodesWeight);
 	return {
 		changeNodeVal : function(a, b, currentVal){
 			//change value in array of nodes vulues
@@ -91,6 +92,7 @@ tttApp.factory('gameFactory', function(){
 							if( k != j && currentVal[i][k] == serchedRole){
 								if( j + k == 3 && nodesWeight[i][0] > 0){
 									nodesWeight[i][0] = addingWeight;
+									console.log()
 								}
 								else if( j + k == 2 && nodesWeight[i][1] > 0){
 									nodesWeight[i][1] = addingWeight;									
@@ -112,7 +114,7 @@ tttApp.factory('gameFactory', function(){
 							}
 						}
 						//checking for two in diagonal
-						if(currentVal[1][1] == serchedRole){
+						if(currentVal[1][1] == serchedRole && (i==0 && j==2 || i==2 && j==0 || i==j)){
 							if(i != j && nodesWeight[j][i] > 0){
 								nodesWeight[j][i] = addingWeight;									
 							}
