@@ -1,1 +1,0 @@
-tttApp = angular.module('tttApp', []);
